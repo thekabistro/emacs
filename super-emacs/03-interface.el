@@ -13,7 +13,7 @@
 
 ;;Activate overcast theme
 ;;(load-theme 'overcast
-            t)
+;;            t)
 
 ;;Set font
 (custom-set-faces
