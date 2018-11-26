@@ -20,7 +20,9 @@
     overcast-theme
     meta-presenter
     myterminal-controls
-    theme-looper))
+    theme-looper
+    flycheck
+    elpy))
 
 ;;Install required packages
 (mapc (lambda (p)
@@ -76,3 +78,11 @@
 (helm-autoresize-mode 1)
 (setq helm-split-window-in-side-p
       t)
+
+
+;; PYTHON PACKAGES:
+;;Start Elpy
+(elpy-enable)
+
+;; Use Flycheck for live syntax checking
+(when (require 'flycheck nil t)   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))   (add-hook 'elpy-mode-hook 'flycheck-mode))

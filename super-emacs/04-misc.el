@@ -12,8 +12,8 @@
       "")
 
 ;;Enforce spaces for indentation, instead of tabs
-(setq-default indent-tabs-mode 
-              nil)
+;;(setq-default indent-tabs-mode 
+;;              nil)
 
 ;;Enable show-paren-mode
 (show-paren-mode)
