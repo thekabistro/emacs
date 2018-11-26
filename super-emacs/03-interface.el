@@ -12,7 +12,7 @@
 (scroll-bar-mode -1)
 
 ;;Activate overcast theme
-(load-theme 'overcast
+;;(load-theme 'overcast
             t)
 
 ;;Set font
