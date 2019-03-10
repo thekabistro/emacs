@@ -6,13 +6,13 @@
         (t (message "You're not editing a file!"))))
 
 ;;Disable splash message, start *scratch* buffer by default
-(setq initial-buffer-choice 
+(setq initial-buffer-choice
       t)
-(setq initial-scratch-message 
+(setq initial-scratch-message
       "")
 
 ;;Enforce spaces for indentation, instead of tabs
-;;(setq-default indent-tabs-mode 
+;;(setq-default indent-tabs-mode
 ;;              nil)
 
 ;;Enable show-paren-mode
@@ -23,3 +23,7 @@
 
 ;;Enable windmove
 (windmove-default-keybindings)
+
+;;Set path properly on mac
+(setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin/"))
+(setq exec-path (append exec-path '("/Library/TeX/texbin/")))

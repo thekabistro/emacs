@@ -22,7 +22,9 @@
     myterminal-controls
     theme-looper
     flycheck
-    elpy))
+    elpy
+    latex-preview-pane
+    ))
 
 ;;Install required packages
 (mapc (lambda (p)
@@ -47,12 +49,12 @@
 (which-key-mode)
 
 ;;Set up ace-jump-mode
-(autoload 'ace-jump-mode 
-  "ace-jump-mode" 
+(autoload 'ace-jump-mode
+  "ace-jump-mode"
   "Emacs quick move minor mode"
   t)
-(autoload 'ace-jump-mode-pop-mark 
-  "ace-jump-mode" 
+(autoload 'ace-jump-mode-pop-mark
+  "ace-jump-mode"
   "Ace jump back:-"
   t)
 
@@ -79,6 +81,9 @@
 (setq helm-split-window-in-side-p
       t)
 
+
+;; latex preview pane
+(latex-preview-pane-enable)
 
 ;; PYTHON PACKAGES:
 ;;Start Elpy
