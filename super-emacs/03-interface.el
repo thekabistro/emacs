@@ -8,6 +8,9 @@
 ;;Disable tool-bar
 (tool-bar-mode -1)
 
+;;Disable obnxious sound
+(setq ring-bell-function 'ignore)
+
 ;;Disable scroll-bar
 (scroll-bar-mode -1)
 
