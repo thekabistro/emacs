@@ -24,6 +24,7 @@
     flycheck
     elpy
     latex-preview-pane
+    tide
     ))
 
 ;;Install required packages
