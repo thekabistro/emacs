@@ -11,9 +11,8 @@
 ;;Disable scroll-bar
 (scroll-bar-mode -1)
 
-;;Activate overcast theme
-;;(load-theme 'overcast
-;;            t)
+;;Activate solarized light theme
+(load-theme 'solarized-light t)
 
 ;;Set font
 (custom-set-faces
