@@ -23,7 +23,7 @@
     theme-looper
     flycheck
     elpy
-    latex-preview-pane
+    auctex
     ))
 
 ;;Install required packages
@@ -83,7 +83,8 @@
 
 
 ;; latex preview pane
-(latex-preview-pane-enable)
+;;(latex-preview-pane-enable)
+
 
 ;; PYTHON PACKAGES:
 ;;Start Elpy
