@@ -20,10 +20,10 @@
     overcast-theme
     meta-presenter
     myterminal-controls
-    theme-looper
     flycheck
     elpy
     auctex
+    solarized-theme
     ))
 
 ;;Install required packages
@@ -62,18 +62,6 @@
 (powerline-center-theme)
 (setq powerline-default-separator
       'slant)
-
-;;Configure theme-looper
-(theme-looper-set-theme-set '(deeper-blue
-                              wheatgrass
-                              wombat
-                              overcast))
-(theme-looper-set-customizations 'powerline-reset)
-
-;;Configure myterminal-controls
-(myterminal-controls-set-controls-data
- '(("t" "Change color theme" theme-looper-enable-next-theme)
-   ("r" "Reload file" super-emacs-reload-current-file)))
 
 ;;Set up helm-mode
 (helm-mode 1)
